@@ -45,7 +45,7 @@ public class MainActivity2 extends AppCompatActivity {
         Button captureButton = findViewById(R.id.captureButton);
         Button generateButton = findViewById(R.id.generateButton);
         Button captureCameraButton = findViewById(R.id.captureCameraButton); // Added new button
-        Button previousPageButton = findViewById(R.id.previousPageButton); // Added new button
+        // Added new button
         summaryTextView = findViewById(R.id.summaryTextView); // Initialize TextView
 
         Executor executor = Executors.newSingleThreadExecutor();
@@ -73,13 +73,7 @@ public class MainActivity2 extends AppCompatActivity {
             }
         });
 
-        previousPageButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainActivity2.this, MainActivity.class);
-                startActivity(intent);
-            }
-        });
+
     }
 
     private void dispatchTakePictureIntent() {
@@ -138,7 +132,7 @@ public class MainActivity2 extends AppCompatActivity {
     private void generateSummary() {
         Bitmap image = ((BitmapDrawable) imageView.getDrawable()).getBitmap();
         Content content = new Content.Builder()
-                .addText("Please outline potential upgrades for this interior design project.")
+                .addText("What simple and concise interior design upgrades can be suggested for this space?")
                 .addImage(image)
                 .build();
 

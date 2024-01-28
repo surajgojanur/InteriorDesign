@@ -4,76 +4,75 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/black">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        tools:context=".MainActivity2">
+        android:layout_marginBottom="16dp"
+    android:layout_marginStart="16dp"
+    android:layout_marginEnd="16dp"
+    tools:context=".MainActivity2"
+        >
 
         <ImageView
             android:id="@+id/imageView"
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_marginTop="16dp"
             android:scaleType="centerCrop"
-            app:layout_constraintTop_toTopOf="parent"
+            android:src="@drawable/placeholder_image"
             app:layout_constraintBottom_toTopOf="@+id/generateButton"
             app:layout_constraintDimensionRatio="16:9"
-            android:src="@drawable/placeholder_image" />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
 
         <Button
             android:id="@+id/captureButton"
-            android:layout_width="wrap_content"
+            android:layout_width="409dp"
             android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
             android:text="Select Image"
-            app:layout_constraintTop_toBottomOf="@id/imageView"
-            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            android:layout_marginTop="16dp" />
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/imageView" />
 
         <Button
             android:id="@+id/captureCameraButton"
-            android:layout_width="wrap_content"
+            android:layout_width="409dp"
             android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
             android:text="Capture Image"
-            app:layout_constraintTop_toBottomOf="@id/captureButton"
-            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            android:layout_marginTop="8dp" />
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/captureButton" />
 
         <Button
             android:id="@+id/generateButton"
-            android:layout_width="wrap_content"
+            android:layout_width="409dp"
             android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
             android:text="Generate Summary"
-            app:layout_constraintTop_toBottomOf="@id/captureCameraButton"
-            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            android:layout_marginTop="16dp" />
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/captureCameraButton" />
 
         <TextView
             android:id="@+id/summaryTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text=""
-            app:layout_constraintTop_toBottomOf="@id/generateButton"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
             android:layout_marginEnd="16dp"
-            android:layout_marginBottom="16dp" />
-
-        <Button
-            android:id="@+id/previousPageButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Previous Page"
-            app:layout_constraintTop_toBottomOf="@id/summaryTextView"
-            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginBottom="16dp"
+            android:text=""
             app:layout_constraintEnd_toEndOf="parent"
-            android:layout_marginTop="16dp" />
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/generateButton" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>
