@@ -7,15 +7,35 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <!-- ImageView for the background -->
+
+    <!-- Button on top of the background -->
+
+    <ImageView
+        android:id="@+id/backgroundImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/home_page_image"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
     <Button
         android:id="@+id/nextPageButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Next Page"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="145dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="16dp"
+        android:text="Enter"
+        android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        android:layout_marginTop="16dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.913" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

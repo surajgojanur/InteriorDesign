@@ -138,7 +138,7 @@ public class MainActivity2 extends AppCompatActivity {
     private void generateSummary() {
         Bitmap image = ((BitmapDrawable) imageView.getDrawable()).getBitmap();
         Content content = new Content.Builder()
-                .addText("Provide a summary for this image:")
+                .addText("Please outline potential upgrades for this interior design project.")
                 .addImage(image)
                 .build();
 
