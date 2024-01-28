@@ -1,70 +1,47 @@
-Certainly! Below is a step-by-step guide on how to push this Android project to GitHub in a professional manner:
+# Interior Design Assistant App
 
-### Step 1: Set Up a GitHub Repository
-1. **Create a New Repository on GitHub:**
-   - Go to [GitHub](https://github.com/) and log in.
-   - Click on the "+" sign in the top right corner and select "New repository."
-   - Provide a name (e.g., "InteriorDesignApp") and add a brief description.
-   - Initialize the repository with a README file.
+![p1](https://github.com/surajgojanur/InteriorDesign/assets/85693124/1283add6-5e93-4e04-a531-79df6912a4e9)
 
-### Step 2: Configure Git Locally
-2. **Install Git:**
-   - If not already installed, download and install Git from [git-scm.com](https://git-scm.com/downloads).
+![Screenshot_2024-01-29-00-37-00-87_1a0580f10c6312ce09e54a4ebf2de3ac](https://github.com/surajgojanur/InteriorDesign/assets/85693124/16401c7a-a88f-48a6-91d3-e996b6f69d55)
 
-3. **Configure Git:**
-   - Open a terminal or command prompt.
-   - Set your global username and email:
-     ```bash
-     git config --global user.name "Your Name"
-     git config --global user.email "your.email@example.com"
-     ```
 
-### Step 3: Connect the Local Project to GitHub
-4. **Navigate to Project Directory:**
-   - Open a terminal in the project directory.
+## Overview
 
-5. **Initialize Git:**
-   - Run the following commands:
-     ```bash
-     git init
-     ```
+This Android application serves as an Interior Design Assistant, leveraging Generative AI to provide design suggestions based on user-provided images. The app allows users to capture or select images, generate design summaries, and explore creative interior design upgrades.
 
-6. **Link to GitHub Repository:**
-   - Link your local project to the GitHub repository:
-     ```bash
-     git remote add origin https://github.com/your-username/InteriorDesignApp.git
-     ```
+## Features
 
-### Step 4: Stage and Commit Changes
-7. **Add Files to Staging:**
-   - Stage all changes:
-     ```bash
-     git add .
-     ```
+- **Image Capture and Selection:** Users can capture images using the device's camera or select images from the gallery.
 
-8. **Commit Changes:**
-   - Commit the staged changes with a descriptive message:
-     ```bash
-     git commit -m "Initial commit: Added Android project files"
-     ```
+- **Generative AI Integration:** Utilizes Google's Generative AI model to analyze images and generate concise interior design suggestions.
 
-### Step 5: Push to GitHub
-9. **Push to GitHub:**
-   - Push the committed changes to the GitHub repository:
-     ```bash
-     git push -u origin master
-     ```
+- **Asynchronous Content Generation:** Content generation is performed asynchronously, providing a smooth user experience.
 
-### Step 6: Verify on GitHub
-10. **Verify on GitHub:**
-    - Visit your GitHub repository in the browser.
-    - Refresh the page to see the committed files.
+## Screenshots
 
-### Additional Tips:
-- **.gitignore:**
-  - Create a `.gitignore` file to exclude unnecessary files from version control (e.g., build files, IDE-specific files). You can find Android-specific `.gitignore` templates on [GitHub's gitignore repository](https://github.com/github/gitignore).
+![p2](https://github.com/surajgojanur/InteriorDesign/assets/85693124/0dec867a-0811-4389-92a0-bbe8cc26097a)
+![p3](https://github.com/surajgojanur/InteriorDesign/assets/85693124/14d004f0-8dda-49f4-a2d7-313c1e7837d3)
 
-- **README.md:**
-  - Update the README file on GitHub with project details, instructions, and any relevant information.
 
-This step-by-step guide assumes you have a basic understanding of Git and GitHub. Adjust the commands and steps as needed based on your specific requirements.
+## Usage
+
+1. **Capture or Select Image:** Use the "Capture Image" button to take a photo or "Select Image" to choose from the gallery.
+
+2. **Generate Design Summary:** Click on the "Explore" button to initiate the Generative AI model for interior design suggestions.
+
+3. **View Results:** The generated design summary will be displayed in the designated TextView.
+
+## Getting Started
+
+### Prerequisites
+
+- Android Studio
+- Generative AI API Key (Get yours from [Google AI](link-to-generative-ai))
+
+### Installation
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/your-username/interior-design-app.git
+   cd interior-design-app
