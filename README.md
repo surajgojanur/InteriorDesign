@@ -33,6 +33,8 @@ This Android application serves as an Interior Design Assistant, leveraging Gene
 
 ## Getting Started
 
+surajgojanur & omkarpatil
+
 ### Prerequisites
 
 - Android Studio
